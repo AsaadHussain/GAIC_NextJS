@@ -1,2 +1,2 @@
 # GAIC_NextJS
-Assignments and practice of Next JS
+Assignments and practice of Next JS -author Asaad Hussain
