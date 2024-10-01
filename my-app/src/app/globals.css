@@ -9,10 +9,16 @@
   /* Fallback to monospace */
 }
 
+.divOut {
+  padding: 0;
+  margin: 0;
+}
+
 .divM {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 100px 10px;
 }
 
 .divT {
@@ -27,42 +33,47 @@
 ._splW {
   color: rgb(13, 255, 0);
   font-family: var(--font-geist-sans);
+  transition: all 0.5s ease-in-out;
 
 }
 
 ._name {
   color: rgb(235, 214, 99);
+  transition: all 0.5s ease-in-out;
 }
 
 .divI {
-  width: 30%;
+  width: 380px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
 .divI>img {
-  width: 400px;
+  width: 380px;
   height: auto;
   opacity: 0.7;
+  transition: transform 0.5s ease-in-out;
+
 }
 
-.divI>img:hover {
-  transform: scale(1.2);
-  transition: 0.5s;
+.divI > img:hover {
+  transform: scale(1.2); 
 }
+
 
 ._splW:hover {
   color: black;
-  transition: 0.8s ease-in-out;
   cursor: pointer;
 }
 
 ._name:hover {
-  color: rgb(206, 202, 86);
-  transition: 0.8s ease-in-out;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 * {
-  margin: 5px 10px;
+  margin: 0;
+  padding: 0;
   background-color: #efefef;
 }
-

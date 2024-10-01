@@ -1,0 +1,114 @@
+.footerDiv {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 40px 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.listDiv {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.footerP {
+    background-color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+li {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 5px 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.formDiv {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.formDiv form {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.formDiv input[type="text"] {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+}
+
+.formDiv input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+.formDiv input[type="submit"]:hover {
+    background-color: #e65c00;
+}
+
+.footerP {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.home a,
+.about a,
+.product a,
+.visit a,
+.home2 a,
+.about2 a,
+.product2 a,
+.visit2 a{
+    border-left: 4px solid transparent;
+}
+
+.listDiv a {
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.home :hover,
+.about :hover,
+.product :hover,
+.visit :hover,
+.home2 :hover,
+.about2 :hover,
+.product2 :hover,
+.visit2 :hover{
+    border-left: 4px solid white;
+}
