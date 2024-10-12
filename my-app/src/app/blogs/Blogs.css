@@ -1,0 +1,343 @@
+.mainD {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(145deg, #ffffff , #f7e49f);
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 5px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.cardD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 10px 50px;
+    padding: 10px;
+}
+
+.card {
+    border-radius: 0px;
+    padding: 0px;
+    height: 400px;
+    width: 280px;
+    margin: 0px 20px 10px 20px;
+    box-shadow: 0px 8px 5px rgb(75, 75, 75);
+    position: relative; /* Make the card relative to position elements inside */
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 15px 20px rgb(42, 42, 42);
+    transform: scale(1.035);
+    cursor: pointer;
+}
+
+.cardImgD {
+    height: 65%;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.cardImgD > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #dabf5c;
+    border-radius: 100%;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    bottom: 22%;
+    z-index: 1; /* Ensure the circle is on top */
+}
+
+.cardTextD {
+    background-color: #dabf5c;
+    padding: 15px;
+    height: 35%;
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+    z-index: 2; /* Ensure text is behind the circle */
+}
+
+.cardTextD > h3 {
+    font-family: var(--font-geist-sans);
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.cardTextD > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width:3000px) and (min-width:2400px) {
+    .heading{
+        margin: 0px auto 5px auto;
+        font-size: 120px;
+    }
+   
+    .card {
+        border-radius: 0px;
+        padding: 0px;
+        height: 600px;
+        width: 400px;
+        margin: 0px 30px 10px 30px;
+    }
+    
+    .circle {
+        height: 130px;
+        width: 130px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 45px;
+    }
+    
+    .cardTextD > p {
+        font-size: 23px;
+        padding-top: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:2400px) and (min-width:1950px) {
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 70px;
+    }
+   
+    .card {
+        height: 600px;
+        width: 400px;
+        margin: 0px 30px 10px 30px;
+    }
+    
+    .circle {
+        height: 130px;
+        width: 130px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 45px;
+    }
+    
+    .cardTextD > p {
+        font-size: 23px;
+        padding-top: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:1950px) and (min-width:1440px) {
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 62px;
+    }
+   
+    .card {
+        height: 500px;
+        width: 330px;
+        margin: 0px 25px 10px 25px;
+    }
+    
+    .circle {
+        height: 120px;
+        width: 120px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 38px;
+    }
+    
+    .cardTextD > p {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:1440px) and (min-width:1150px) {
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 54px;
+    }
+   
+    .card {
+        height: 400px;
+        width: 270px;
+        margin: 0px 22px 10px 22px;
+    }
+    
+    .circle {
+        height: 95px;
+        width: 95px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 29px;
+    }
+    
+    .cardTextD > p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:1150px) and (min-width:850px) {
+  
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 38px;
+    }
+   
+    .card {
+        height: 295px;
+        width: 200px;
+        margin: 0px 15px 10px 15px;
+    }
+    
+    .circle {
+        height: 70px;
+        width: 70px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 22px;
+    }
+    
+    .cardTextD > p {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:850px) and (min-width:650px) {
+  
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 30px;
+    }
+   
+    .card {
+        height: 250px;
+        width: 170px;
+        margin: 0px 12px 0px 12px;
+    }
+    
+    .circle {
+        height: 60px;
+        width: 60px;
+    }
+
+    .cardTextD{
+        padding-top: 5px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 18px;
+    }
+    
+    .cardTextD > p {
+        font-size: 10px;
+        padding-top: 3px;
+    }
+  }
+  
+  @media only screen and (max-width:650px) and (min-width:425px) {
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    .cardD {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0px;
+        padding: 20px 0px;
+    }
+   
+    .card {
+        height: 270px;
+        width: 190px;
+    }
+    
+    .circle {
+        height: 65px;
+        width: 65px;
+    }
+
+    .cardTextD{
+        padding-top: 7px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 18px;
+    }
+    
+    .cardTextD > p {
+        font-size: 11px;
+        padding-top: 3px;
+    }
+  }
+  
+  @media only screen and (max-width:425px) and (min-width:300px) {
+    .heading{
+        margin: 50px auto 5px auto;
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    .cardD {
+        flex-direction: column;
+        gap: 28px;
+        margin: 0px;
+        padding: 20px 0px;
+    }
+   
+    .card {
+        height: 250px;
+        width: 175px;
+    }
+    
+    .circle {
+        height: 60px;
+        width: 60px;
+    }
+
+    .cardTextD{
+        padding-top: 7px;
+    }
+
+    .cardTextD > h3 {
+        font-size: 16px;
+    }
+    
+    .cardTextD > p {
+        font-size: 10px;
+        padding-top: 3px;
+    }
+  }

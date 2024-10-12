@@ -9,16 +9,26 @@
   /* Fallback to monospace */
 }
 
+
 .divOut {
   padding: 0;
   margin: 0;
+  background: linear-gradient(145deg, #ffffff, #f7e49f);
+  min-height: calc(100vh - 100px);
+  /* Ensure divOut takes up at least the full height minus navbar/footer */
+  display: flex;
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
 }
 
 .divM {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 100px 10px;
+  flex: 1;
+  /* Allow divM to grow to fill the available space */
+  padding: 100px 20px;
 }
 
 .divT {
@@ -31,34 +41,36 @@
 }
 
 ._splW {
-  color: rgb(13, 255, 0);
+  color: rgb(9, 177, 0);
   font-family: var(--font-geist-sans);
   transition: all 0.5s ease-in-out;
 
 }
 
 ._name {
-  color: rgb(235, 214, 99);
+  color: rgb(220, 201, 132);
   transition: all 0.5s ease-in-out;
 }
 
 .divI {
-  width: 380px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   position: relative;
+  border: 0px solid white;
+  border-radius: 100%;
+  box-shadow: 5px 10px 10px rgb(52, 52, 52);
 }
 
 .divI>img {
-  width: 380px;
+  width: 400px;
   height: auto;
-  opacity: 0.7;
   transition: transform 0.5s ease-in-out;
 
 }
 
-.divI > img:hover {
-  transform: scale(1.2); 
+.divI>img:hover {
+  transform: scale(1.2);
 }
 
 
@@ -68,12 +80,235 @@
 }
 
 ._name:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(221, 220, 220);
   cursor: pointer;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  background-color: #efefef;
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.buttonB {
+  background-color: #ffffff;
+  border-left: 0px solid rgb(202, 202, 202);
+  border-right: 0px solid rgb(202, 202, 202);
+  border-top: 1px solid rgb(202, 202, 202);
+  border-radius: 28px;
+  padding: 4px 25px;
+  margin: 7px 50px;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 0px 12px 0px rgb(200, 200, 200);
+  transition: all 0.5s ease;
+}
+
+.buttonB:active {
+  background-color: #ffe100;
+  border-left: 1px solid #ffbb00;
+  border-right: 1px solid #ffbb00;
+  border-top: 1px solid #ffbb00;
+  box-shadow: 0px 2px 0px #ffbb00;
+  color: #ffbb00;
+  transform: translateY(10px);
+}
+
+
+@media only screen and (max-width:3000px) and (min-width:2400px) {
+
+  .divT>p {
+    font-size: 130px;
+  }
+
+  .buttonB {
+    padding: 10px 60px;
+    font-size: 70px;
+    border-radius: 100px;
+    box-shadow: 0px 25px 0px rgb(200, 200, 200);
+  }
+
+  .divI {
+    width: 850px;
+    height: 850px;
+  }
+
+  .divI>img {
+    width: 850px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:2400px) and (min-width:1440px) {
+  .divT>p {
+    font-size: 70px;
+  }
+
+  .buttonB {
+    padding: 6px 30px;
+    font-size: 32px;
+    border-radius: 50px;
+    box-shadow: 0px 12px 0px rgb(200, 200, 200);
+  }
+
+  .divI {
+    width: 400px;
+    height: 400px;
+  }
+
+  .divI>img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:1439px) and (min-width:1024px) {
+  .divT>p {
+    font-size: 48px;
+  }
+
+  .buttonB {
+    padding: 5px 22px;
+    font-size: 22px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 0px rgb(200, 200, 200);
+  }
+
+  .divI {
+    width: 300px;
+    height: 300px;
+  }
+
+  .divI>img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:1024px) and (min-width:670px) {
+  .divT>p {
+    font-size: 40px;
+  }
+
+  .buttonB {
+    padding: 4px 18px;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 0px rgb(200, 200, 200);
+  }
+
+  .divI {
+    width: 200px;
+    height: 200px;
+  }
+
+  .divI>img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:670px) and (min-width:451px) {
+
+  .divM {
+    flex-direction: column;
+    padding: 30px 2px;
+  }
+  .divT>p {
+    font-size: 28px;
+  }
+
+  .buttonB {
+    padding: 3px 16px;
+    margin: 10px 50px;
+    font-size: 16px;
+    box-shadow: 0px 6px 0px rgb(200, 200, 200);
+   }
+
+  .buttonDiv {
+    width: 100%;
+  }
+
+  .divI {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 10px 10px rgb(52, 52, 52);
+  }
+
+  .divI>img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:451px) and (min-width:375px) {
+
+  .divM {
+    flex-direction: column;
+    padding: 30px 2px;
+  }
+  .divT>p {
+    font-size: 24px;
+  }
+
+  .buttonB {
+    padding: 3px 16px;
+    margin: 10px 50px;
+    font-size: 16px;
+    box-shadow: 0px 6px 0px rgb(200, 200, 200);
+   }
+
+  .buttonDiv {
+    width: 100%;
+  }
+
+  .divI {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 10px 10px rgb(52, 52, 52);
+  }
+
+  .divI>img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:375px) and (min-width:319px) {
+
+  .divM {
+    flex-direction: column;
+    padding: 30px 2px;
+  }
+  .divT>p {
+    font-size: 20px;
+  }
+
+  .buttonB {
+    padding: 3px 16px;
+    margin: 10px 50px 0px 50px;
+    font-size: 16px;
+    box-shadow: 0px 6px 0px rgb(200, 200, 200);
+   }
+
+  .buttonDiv {
+    width: 100%;
+  }
+
+  .divI {
+    margin-top: 0px;
+    width: 130px;
+    height: 130px;
+    box-shadow: 5px 10px 10px rgb(52, 52, 52);
+  }
+
+  .divI>img {
+    width: 130px;
+    height: auto;
+  }
 }

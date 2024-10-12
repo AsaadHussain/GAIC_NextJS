@@ -1,5 +1,9 @@
+.outDiv {
+    width: 100%;
+}
+
 .footerDiv {
-    background-color: rgb(0, 0, 0);
+    background-color: #f0d46e;
     color: #fff;
     padding: 40px 0;
     width: 100%;
@@ -9,21 +13,30 @@
     align-items: center;
 }
 
+.listMain{
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
 .listDiv {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #f0d46e;
+
 }
 
-.footerP {
-    background-color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 16px;
+.listDiv a {
+    padding: 0px 10px;
+    margin: 0px 10px;
 }
 
 li {
-    background-color: rgb(0, 0, 0);
+    background-color: #f0d46e;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -32,19 +45,32 @@ li {
     padding: 5px 50px;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
+.home a,
+.about a,
+.product a,
+.visit a,
+.facebook a,
+.twitter a,
+.instagram a,
+.youtube a {
+    border-left: 4px solid transparent;
+}
+
+.home :hover,
+.about :hover,
+.product :hover,
+.visit :hover,
+.facebook :hover,
+.twitter :hover,
+.instagram :hover,
+.youtube :hover {
+    border-left: 4px solid white;
 }
 
 .formDiv {
     display: flex;
     flex-direction: column;
-    background-color: black;
-}
-
-.formDiv {
-    background-color: #000000;
+    background-color: #f0d46e;
     padding: 20px;
     text-align: center;
     color: #000000;
@@ -66,7 +92,7 @@ li {
 }
 
 .formDiv input[type="submit"] {
-    background-color: #ff6600;
+    background-color: #ffb522;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -77,38 +103,230 @@ li {
 }
 
 .formDiv input[type="submit"]:hover {
-    background-color: #e65c00;
+    background-color: #e89a00;
 }
 
 .footerP {
     margin-top: 20px;
-    font-size: 14px;
-    color: #ccc;
+    color: #ffffff;
+    background-color: #f0d46e;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-.home a,
-.about a,
-.product a,
-.visit a,
-.home2 a,
-.about2 a,
-.product2 a,
-.visit2 a{
-    border-left: 4px solid transparent;
+@media only screen and (max-width:3000px) and (min-width:1950px) {
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    li {
+        font-size: 26px;
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+
+    .formDiv input[type="text"] {
+        width: 250px;
+        font-size: 22px;
+    }
+
+    .formDiv input[type="submit"] {
+        padding: 8px 16px;
+        font-size: 22px;
+    }
+
+    .footerP {
+        font-size: 22px;
+    }
 }
 
-.listDiv a {
-    padding: 0px 10px;
-    margin: 0px 10px;
+@media only screen and (max-width:1950px) and (min-width:1500px) {
+    .logo {
+        width: 125px;
+        height: 125px;
+    }
+
+    li {
+        font-size: 22px;
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+
+    .formDiv input[type="text"] {
+        width: 230px;
+        font-size: 20px;
+    }
+
+    .formDiv input[type="submit"] {
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+
+    .footerP {
+        font-size: 20px;
+    }
 }
 
-.home :hover,
-.about :hover,
-.product :hover,
-.visit :hover,
-.home2 :hover,
-.about2 :hover,
-.product2 :hover,
-.visit2 :hover{
-    border-left: 4px solid white;
+@media only screen and (max-width:1500px) and (min-width:1200px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    li {
+        font-size: 18px;
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+
+    .formDiv input[type="text"] {
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .formDiv input[type="submit"] {
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+
+    .footerP {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:1200px) and (min-width:800px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    li {
+        font-size: 13px;
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+
+    .formDiv input[type="text"] {
+        width: 120px;
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+
+    .formDiv input[type="submit"] {
+        padding: 5px 12px;
+        font-size: 10px;
+    }
+
+    .footerP {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:800px) and (min-width:580px) {
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    li {
+        font-size: 10px;
+        margin: 0 3px;
+        padding: 3px 5px;
+    }
+
+    .formDiv input[type="text"] {
+        width: 70px;
+        font-size: 7px;
+        padding: 3px 8px;
+    }
+
+    .formDiv input[type="submit"] {
+        padding: 3px 8px;
+        font-size: 7px;
+    }
+
+    .footerP {
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width:580px) and (min-width:425px) {
+    .footerDiv {
+        padding: 30px 0px;
+        margin: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .listDiv a {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    li {
+        font-size: 12px;
+        margin: 0px;
+        padding: 5px 30px;
+    }
+    
+    .formDiv input[type="text"] {
+        width: 120px;
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .formDiv input[type="submit"] {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .footerP {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:425px) and (min-width:280px) {
+    .footerDiv {
+        padding: 30px 0px;
+        margin: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .listDiv a {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    li {
+        font-size: 12px;
+        margin: 0px;
+        padding: 5px 30px;
+    }
+    
+    .formDiv input[type="text"] {
+        width: 120px;
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .formDiv input[type="submit"] {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .footerP {
+        font-size: 10px;
+    }
 }
