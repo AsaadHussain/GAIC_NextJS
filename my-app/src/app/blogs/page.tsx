@@ -12,7 +12,7 @@ export default function Blogs() {
                 <Link href="/blogs/nature">
                 <div className="card">
                     <div className="cardImgD">
-                        <img src="/nature2.jpg" alt="image" />
+                         <img src="/nature2.jpg" alt="image" />
                     </div>
                     <div className="circle"></div>
                     <div className="cardTextD">
